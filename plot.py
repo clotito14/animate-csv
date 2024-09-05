@@ -16,5 +16,5 @@ def animate(i):
     axis.set_xlim([1949, 2023])
     axis.set_ylim([250, 4100])
 
-ani = animation.FuncAnimation(fig, animate, interval=100)
-plt.show()
+ani = animation.FuncAnimation(fig, animate, interval=10)
+ani.save(filename="./tmp/plot.gif", writer='pillow')
